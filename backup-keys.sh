@@ -69,7 +69,7 @@ fi
 
 # ── Generar nota de información de YubiKey ───────────────────────────────────
 {
-    echo "# Backup YubiKey — $(date --utc '+%Y-%m-%dT%H:%M:%SZ')"
+    echo "# Backup YubiKey — $(date -u '+%Y-%m-%dT%H:%M:%SZ')"
     echo ""
     echo "## Información de YubiKey"
     if command -v ykman &>/dev/null && ykman info &>/dev/null 2>&1; then
